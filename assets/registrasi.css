@@ -1,0 +1,54 @@
+body
+{
+	margin: 0;
+	padding: 0;
+	background-color: #fce4ec;
+	font-size:20px;
+	color: #560027; 
+
+}
+.regist
+{
+	margin: auto;
+	width: 500px;
+}
+.form
+{	box-shadow: 1px 1px 30px #560027;
+	background-color: #c9b2ba;
+	padding: 20px;
+	border-radius: 20px;
+	text-align: center;
+	margin-top: 30px;
+	
+}
+input[type=text], input[type=password], input[type=number]
+{
+	width: 350px;
+	margin: 5px 0;
+	padding: 5px 5px;
+	border: 2px solid #560027;
+	box-sizing: border-box;
+	border-radius: 12px;
+	text-align: center;
+	outline: none;
+	transition: 0.5s;
+	color: #000000;
+
+}
+
+input[type=text]:focus, input[type=password]:focus, input[type=number]:focus
+{
+	width: 400px;
+	border-color: #fce4ec;
+}
+input[type=submit]
+{
+	margin: 5px 0;
+	text-align: center;
+	border: 2px solid #560027;
+	width: 200px;
+	outline: none;
+	transition: 0.5s;
+	border-radius: 12px;
+	padding:5px 5px;
+}

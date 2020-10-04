@@ -1,0 +1,26 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body
+{
+	overflow-x:hidden;
+	font-size: 20px;
+
+}
+.navbar
+{
+	text-transform: uppercase;
+	letter-spacing: .1rem;
+	background-color: #fce4ec;
+	padding-right: 10px;
+	}
+.navbar-brand img
+	{
+		padding-left: 0px;
+
+	}
+.navbar-nav li a
+{
+	color: #560027 !important;
+}
