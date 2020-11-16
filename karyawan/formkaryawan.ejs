@@ -1,0 +1,117 @@
+<div>
+    <h4>Data Pribadi</h4>
+    <div class="row">
+        <div class="col">
+            <label for="avatar">Foto </label><br>
+            <img src="/uploads/<%= avatar %>" style="width: 50px; height: 50px;">
+            <input type="file" name="avatar" class="form-control" id="avatar" value="<%= avatar %>">
+        </div>
+        <div class="col"><br><br>
+            <label for="noktp">No. KTP</label>
+            <input required type="number" name="noktp" id="noktp" class="form-control" value="<%= noktp %>">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <label for="nama">Nama</label>
+            <input required type="text" name="nama" id="nama" class="form-control" value="<%= nama %>">
+        </div>
+
+        <div class="col">
+            <label for="ttl">Tempat, Tanggal Lahir</label>
+            <input required type="text" name="ttl" id="ttl" class="form-control" value="<%= ttl %>">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <label for="agama">Agama</label>
+            <input required type="text" name="agama" id="agama" class="form-control" value="<%= agama %>">
+        </div>
+
+        <div class="col">
+            <label for="alamat">Alamat</label>
+            <input required type="text" name="alamat" id="alamat" class="form-control" value="<%= alamat %>">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <label for="statuskawin">Status Kawin</label>
+            <input required type="text" name="statuskawin" id="statuskawin" class="form-control"
+                value="<%= statuskawin %>">
+        </div>
+        <div class="col">
+            <label for="nohp">No. HP</label>
+            <input required type="number" name="nohp" id="nohp" class="form-control" value="<%= nohp %>">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <label for="email">Email</label>
+            <input required type="email" name="email" id="email" class="form-control" value="<%= email %>">
+        </div>
+
+        <div class="col">
+            <label for="jabatannow">Jabatan</label>
+            <input required type="text" name="jabatannow" id="jabatannow" class="form-control"
+                value="<%= jabatannow %>">
+        </div>
+        <div class="col">
+            <label for="nama_divisi">Divisi</label>
+            <input required type="text" name="nama_divisi" id="nama_divisi" class="form-control"
+                value="<%= nama_divisi %>">
+        </div>
+    </div>
+</div><br>
+<div>
+    <h4>Data Pendidikan</h4>
+    <div class="row">
+        <div class="col">
+            <label for="pend_terakhir">Pendidikan Terakhir </label>
+            <input required type="text" name="pend_terakhir" class="form-control" id="pend_terakhir"
+                value="<%= pend_terakhir %>">
+        </div>
+        <div class="col">
+            <label for="jurusan">Jurusan</label>
+            <input required type="text" name="jurusan" id="jurusan" class="form-control" value="<%= jurusan %>">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <label for="sekolah">Asal Sekolah</label>
+            <input required type="text" name="sekolah" id="sekolah" class="form-control" value="<%= sekolah %>">
+        </div>
+        <div class="col">
+            <label for="tahunlulus">Tahun Lulus</label>
+            <input required type="text" name="tahunlulus" id="tahunlulus" class="form-control"
+                value="<%= tahunlulus %>">
+        </div>
+    </div>
+</div><br>
+<div>
+    <h4>Data Pengalaman</h4>
+    <div class="row">
+        <div class="col">
+            <label for="nama_perusahaan">Nama Perusahaan </label>
+            <input required type="text" name="nama_perusahaan" class="form-control" id="nama_perusahaan"
+                value="<%= nama_perusahaan %>">
+        </div>
+        <div class="col">
+            <label for="jabatanold">Jabatan</label>
+            <input required type="text" name="jabatanold" id="jabatanold" class="form-control"
+                value="<%= jabatanold %>">
+        </div>
+    </div>
+    <div class=" row">
+        <div class="col">
+            <label for="periode1">Periode Dari</label>
+            <input required type="text" name="periode1" id="periode1" class="form-control" value="<%= periode1 %>">
+        </div>
+        <div class="col">
+            <label for="periode2">Periode Sampai</label>
+            <input required type="text" name="periode2" id="periode2" class="form-control" value="<%= periode2 %>">
+        </div>
+    </div>
+</div><br>
+
+<a href="/karyawan" class="btn btn-secondary">Cancel</a>
+<button class="btn btn-primary" name="submit">Save</button>

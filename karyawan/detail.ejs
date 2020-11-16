@@ -1,0 +1,125 @@
+<%- include('../partials/header', { akunUser:'', divisi: '', karyawan:'active', dashboard: '', loginUser} ) %>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="content-wrapper">
+        <div class="content-header">
+            <div class="container-fluid">
+                <div class="row mb-2">
+                    <div class="col-sm-6">
+                        <h1 class="m-0 text-dark">Data Karyawan</h1>
+                    </div><!-- /.col -->
+                </div><!-- /.row -->
+            </div><!-- /.container-fluid -->
+        </div>
+        <div class="content">
+            <div class="container-fluid">
+                <div class="card">
+                    <div class="card-body">
+                        <table border="1" cellpadding="5" width="100%">
+                            <h4> Data Pribadi </h4>
+                            <img src="/uploads/<%= karyawan.avatar %>" style="width: 100px; height: 120px; display: block;
+                            margin-left: auto;
+                            margin-right: auto;"><br>
+                            <tr>
+                                <th>No.KTP </th>
+                                <td style="width: 50%;"><%= karyawan.noktp %></td>
+                            </tr>
+                            <tr>
+                                <th>Nama </th>
+                                <td style="width: 50%;"><%= karyawan.nama %></td>
+                            </tr>
+                            <tr>
+                                <th>Tempat, Tanggal Lahir</th>
+                                <td style="width: 50%;"><%= karyawan.ttl %></td>
+                            </tr>
+                            <tr>
+                                <th>Agama </th>
+                                <td style="width: 50%;"><%= karyawan.agama %></td>
+                            </tr>
+                            <tr>
+                                <th>Alamat</th>
+                                <td style="width: 50%;"><%= karyawan.alamat %></td>
+                            </tr>
+                            <tr>
+                                <th>Status Kawin</th>
+                                <td style="width: 50%;"><%= karyawan.statuskawin %></td>
+                            </tr>
+                            <tr>
+                                <th>No. Handphone</th>
+                                <td style="width: 50%;"><%= karyawan.nohp %></td>
+                            </tr>
+                            <tr>
+                                <th>Email </th>
+                                <td style="width: 50%;"><%= karyawan.email %></td>
+                            </tr>
+                            <tr>
+                                <th>Jabatan </th>
+                                <td style="width: 50%;"><%= karyawan.jabatannow %></td>
+                            </tr>
+                            <tr>
+                                <th>Divisi</th>
+                                <td style="width: 50%;"><%= karyawan.nama_divisi %></td>
+                            </tr>
+                        </table><br>
+                        <table border="1" cellpadding="5" width="100%">
+                            <tr>
+                                <h4>Data Pendidikan</h4>
+                            </tr>
+                            <tr>
+                                <th>Pendidikan Terakhir</th>
+                                <td style="width: 50%;"><%= karyawan.pend_terakhir %></td>
+                            </tr>
+                            <tr>
+                                <th>Jurusan</th>
+                                <td style="width: 50%;"><%= karyawan.jurusan %></td>
+                            </tr>
+                            <tr>
+                                <th>Asal Sekolah</th>
+                                <td style="width: 50%;"><%= karyawan.sekolah %></td>
+                            </tr>
+                            <tr>
+                                <th>Tahun Lulus</th>
+                                <td style="width: 50%;"><%= karyawan.tahunlulus %></td>
+                            </tr>
+                        </table><br>
+                        <table border="1" cellpadding="5" width="100%">
+                            <tr>
+                                <h4>Data Pengalaman</h4>
+                            </tr>
+                            <tr>
+                                <th>Nama Perusahaan</th>
+                                <td style="width: 50%;"><%= karyawan.nama_perusahaan %></td>
+                            </tr>
+                            <tr>
+                                <th>Jabatan</th>
+                                <td style="width: 50%;"><%= karyawan.jabatanold %></td>
+                            </tr>
+                            <tr>
+                                <th>Dari Periode </th>
+                                <td style="width: 50%;"><%= karyawan.periode1 %></td>
+                            </tr>
+                            <tr>
+                                <th>Sampai Periode</th>
+                                <td style="width: 50%;"><%= karyawan.periode2 %></td>
+                            </tr>
+
+                        </table><br>
+                        <a href="/karyawan" class="btn btn-secondary">Kembali</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+
+<%- include('../partials/footer') %>
